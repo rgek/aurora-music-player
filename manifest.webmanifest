@@ -1,10 +1,22 @@
 {
+  "id": "./",
   "name": "Aurora Music Player",
   "short_name": "Aurora",
-  "description": "A lightweight, unified SoundCloud and Spotify player.",
-  "start_url": "./aurora-player.html",
+  "description": "A unified Spotify and SoundCloud player with library, search and queue.",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#f3f0f4",
   "theme_color": "#ff375f",
-  "icons": [{ "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+  "categories": ["music", "entertainment"],
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Search", "url": "./#/search" },
+    { "name": "Your Library", "url": "./#/library" },
+    { "name": "Open a link", "url": "./#/sources" }
+  ]
 }
